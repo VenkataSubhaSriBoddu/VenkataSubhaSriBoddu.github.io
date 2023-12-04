@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .playlist {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .playlist-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .player {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Music Streaming Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Browse</a>
+        <a href="#">Search</a>
+    </nav>
+
+    <section>
+        <h2>Featured Playlists</h2>
+        <div class="playlist">
+            <div class="playlist-item">
+                <img src="playlist1.jpg" alt="Playlist 1">
+                <p>Playlist 1</p>
+                <button onclick="playPlaylist('playlist1')">Play</button>
+            </div>
+            <div class="playlist-item">
+                <img src="playlist2.jpg" alt="Playlist 2">
+                <p>Playlist 2</p>
+                <button onclick="playPlaylist('playlist2')">Play</button>
+            </div>
+            <!-- Add more playlists as needed -->
+        </div>
+    </section>
+
+    <section class="player">
+        <h2>Now Playing</h2>
+        <audio controls>
+            <source src="song.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Music Streaming Website</p>
+    </footer>
+
+    <script>
+        function playPlaylist(playlistName) {
+            // Implement logic to play the selected playlist
+            console.log('Playing playlist:', playlistName);
+        }
+    </script>
+</body>
+</html>
